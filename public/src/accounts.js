@@ -3,8 +3,8 @@ function findAccountById(accounts, id) {
 }
 
 function sortAccountsByLastName(accounts) {
-  return [...accounts].sort((a, b) =>
-    a.name.last.localeCompare(b.name.last)
+  return [...accounts].sort((accountA, accountB) =>
+    accountA.name.last.localeCompare(accountB.name.last)
   );
 }
 
@@ -33,7 +33,6 @@ function getBooksPossessedByAccount(account, books, authors) {
     });
 }
 
-// Export functions
 module.exports = {
   findAccountById,
   sortAccountsByLastName,
